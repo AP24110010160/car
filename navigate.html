@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Navigate - Accessible Campus Navigator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body>
+
+<header>
+    <h2>Navigate</h2>
+    <p class="id">ID: AP24110010210</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="features.html">Features</a>
+    <a href="navigate.html">Navigate</a>
+</nav>
+
+<section class="navigation-panel">
+    <input id="dest" type="text" placeholder="Enter destination">
+    <button id="findBtn" onclick="findRoute()">Find Route</button>
+    <button onclick="locateUser()">Locate Me</button>
+</section>
+
+<div id="map"></div>
+
+<!-- Leaflet JS (must load before app script) -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<!-- App script -->
+<script src="script.js"></script>
+
+</body>
+</html>
